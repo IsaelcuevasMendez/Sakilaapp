@@ -1,8 +1,8 @@
 <?php
-require_once 'Conexion.php';
 
-function obtenerPais($conexion){
+require_once "conexion.php";
 
+function obtenerPais($conexion) {
     $query = "SELECT * FROM country";
 
     $resultado = mysqli_query($conexion, $query);
@@ -12,7 +12,7 @@ function obtenerPais($conexion){
 
 function obtenerPaisPorNombre($conexion, $nombre){
 
-    $query = "SELECT * FROM country WHERE country LIKE '%$nombre%'";
+    $query = "SELECT * FROM country WHERE name LIKE '%$nombre%'";
 
     $resultado = mysqli_query($conexion, $query);
 

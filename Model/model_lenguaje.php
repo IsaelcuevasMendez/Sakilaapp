@@ -1,8 +1,8 @@
 <?php
-require_once 'Conexion.php';
 
-function obtenerLenguaje($conexion){
+require_once "conexion.php";
 
+function obtenerLenguaje($conexion) {
     $query = "SELECT * FROM language";
 
     $resultado = mysqli_query($conexion, $query);

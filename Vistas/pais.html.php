@@ -1,5 +1,5 @@
 <?php require_once 'partes/head.php'; ?>
-<?php #require_once 'partes/menu.php';
+<?php require_once 'partes/menu.php';
 ?>
 
 <div class="bg-light">
@@ -13,7 +13,7 @@
     <form action="">
         <div class="form-group">
             <input type="search" name="nombre" id="" class="form-control" placeholder="Escribe para buscar">
-            <button name="Buscar" class="btn btn-primary">Buscar</button>
+            <button name="buscar" class="btn btn-primary">Buscar</button>
         </div>
     </form>
 </div>

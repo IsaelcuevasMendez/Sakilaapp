@@ -1,8 +1,8 @@
 <?php
-require_once 'Conexion.php';
 
-function obtenerCategoria($conexion){
+require_once "conexion.php";
 
+function obtenerCategorias($conexion) {
     $query = "SELECT * FROM category";
 
     $resultado = mysqli_query($conexion, $query);
@@ -10,7 +10,7 @@ function obtenerCategoria($conexion){
     return $resultado;
 }
 
-function obtenerCategoriaPorNombre($conexion, $nombre){
+function obtenerCategoriasPorNombre($conexion, $nombre){
 
     $query = "SELECT * FROM category WHERE name LIKE '%$nombre%'";
 

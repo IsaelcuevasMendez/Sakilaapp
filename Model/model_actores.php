@@ -1,8 +1,8 @@
 <?php
-require_once 'Conexion.php';
 
-function obtenerActores($conexion){
+require_once "conexion.php";
 
+function obtenerActores($conexion) {
     $query = "SELECT * FROM actor";
 
     $resultado = mysqli_query($conexion, $query);
@@ -10,11 +10,12 @@ function obtenerActores($conexion){
     return $resultado;
 }
 
-function obtenerActoresPorNombre($conexion, $nombre){
+function obtenerActoresPorNombre($nombre, $conexion){
 
-    $query = "SELECT * FROM actor WHERE first_name LIKE '%$nombre%'";
+    $query = "SELECT * FROM actor WHERE name LIKE '%$nombre%'";
 
     $resultado = mysqli_query($conexion, $query);
 
     return $resultado;
 }
+
