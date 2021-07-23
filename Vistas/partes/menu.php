@@ -22,9 +22,9 @@
     but hey, it's pure CSS magic.
     -->
     <ul id="menu">
-      <a href="actores.php"><li>Actores</li></a>
-      <a href="categoria.php"><li>Categorias</li></a>
-      <a href="pais.php"><li>Pais</li></a>
-    </ul>
+      <li><a href="<?php echo $url;?>/actores.php">Actores</a></li>
+      <li><a href="<?php echo $url;?>/categoria.php">Categorias</a></li>
+      <li><a href="<?php echo $url;?>/lenguaje.php">Idiomas</a></li>
+      <li><a href="<?php echo $url;?>/pais.php">Categorias</a></li>
   </div>
 </nav>
