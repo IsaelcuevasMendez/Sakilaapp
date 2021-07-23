@@ -19,16 +19,24 @@
 </div>
 
 <!--Tabla-->
-<table class="table container">
+<!-- Cabecera de la tabla 🡻 -->
+<div class= "table container">
+    <table class="table table-dark table-striped">
     <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Idioma</th>
+        <tr class="table-primary">
+        <th scope="col">#</th>
+        <th scope="col">First</th>
             <th scope="col">Last</th>
             <th scope="col">Handle</th>
-        </tr>
+            
+<!-- Tabla y contenido 🡻 -->
+<table class="table table-dark table-striped">
+    <thead>
+        </tr class="table-primary">
     </thead>
     <tbody>
+
+    
         <?php
         while ($dato = mysqli_fetch_assoc($resultado)) {
             echo "<tr>

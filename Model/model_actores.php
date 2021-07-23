@@ -10,9 +10,9 @@ function obtenerActores($conexion) {
     return $resultado;
 }
 
-function obtenerActoresPorNombre($nombre, $conexion){
+function obtenerActoresPorNombre($conexion, $nombre){
 
-    $query = "SELECT * FROM actor WHERE name LIKE '%$nombre%'";
+    $query = "SELECT * FROM actor WHERE first_name LIKE '%$nombre%'";
 
     $resultado = mysqli_query($conexion, $query);
 

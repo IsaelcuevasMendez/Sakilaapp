@@ -8,32 +8,43 @@
 </div>
 
 <!-- Formulario -->
-<div class="container">
+<div class="container1">
     <form action="">
-        <div class="form-group">
-            <input type="search" name="nombre" id="" class="form-control" placeholder="Escribe para buscar">
-            <button name="buscar" class="btn btn-primary">Buscar</button>
-        </div>
+    <div class="group">      
+      <input name="nombre" type="text" >
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Name</label>
+      <!--Boton Buscar 🡺 --> <button name="buscar" class= "boton">Buscar</button>
+    </div>
+
     </form>
 </div>
 
 <!--Tabla-->
-<div class= "container">
-<table class="table table-hover">
+<!-- Cabecera de la tabla 🡻 -->
+<div class= "table container">
+    <table class="table table-dark table-striped">
     <thead>
-        <tr>
+        <tr class="table-primary">
         <th scope="col">#</th>
-            <th scope="col">First</th>
+        <th scope="col">First</th>
             <th scope="col">Last</th>
             <th scope="col">Handle</th>
-        <table class="table">
-  <thead class="table-dark">
-        </tr>
+
+<!-- Tabla y contenido 🡻 -->
+<table class="table table-dark table-striped">
+    <thead>
+        </tr class="table-primary">
     </thead>
     <tbody>
+
+
+
+
         <?php
         while ($dato = mysqli_fetch_assoc($resultado)) {
-            echo "<tr class='Elpepe'>
+            echo "<tr>
                     <th  scope='row'>{$dato['actor_id']}</th>
                     <td>{$dato['first_name']}</td>
                     <td>{$dato['last_name']}</td>
@@ -43,5 +54,6 @@
         ?>
     </tbody>
 </table>
-    </div>
-<?php require_once 'partes/foot.php'; ?>
+</div>
+
+    <?php require_once 'partes/foot.php'; ?>
