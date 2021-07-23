@@ -4,7 +4,7 @@
    padding: 0;
    
    /* make it look decent enough */
-   background: #232323;
+   background: #000;
    color: #cdcdcd;
    font-family: "Avenir Next", "Avenir", sans-serif;
  }
@@ -16,7 +16,7 @@
    top: 50px;
    left: 50px;
    
-   z-index: 1;
+   z-index: 10;
    
    -webkit-user-select: none;
    user-select: none;
@@ -48,7 +48,7 @@
    cursor: pointer;
    
    opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
+   z-index: 9; /* and place it over the hamburger */
    
    -webkit-touch-callout: none;
  }
@@ -132,6 +132,7 @@
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
+   
    
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
