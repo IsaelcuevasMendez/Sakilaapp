@@ -3,7 +3,6 @@
 
 
 
-
 <!--Hey! This is the original version
 of Simple CSS Waves-->
 
@@ -109,8 +108,6 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 </div>
 
 </div>
-
-
 
 
 
