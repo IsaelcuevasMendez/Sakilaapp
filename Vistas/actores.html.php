@@ -48,45 +48,24 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <input name="nombre" type="text" >
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Name</label>
-      <!--Boton Buscar 🡺 --> <button name="buscar" class= "boton">Buscar</button>
+      <!--Boton Buscar 🡺 --> <button type="button" class="btn btn-secundary">Buscar</button>
     </div>
-
-    </form>
-</div>
-
-<!--Tabla-->
-<!-- Cabecera de la tabla 🡻 
-<div class= "table container">
-    <table class="table table-dark table-striped">
-    <thead>
-        <tr class="table-primary">
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-            <th scope="col">Last</th>-->
-
-
-<!-- Tabla y contenido 🡻 -->
-
-
 <section>
-  <!--for demo wrap-->
-  <h1>Fixed Table header</h1>
+<!-- Cabecera de la tabla 🡻 -->
   <div class="tbl-header">
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th>Code</th>
-          <th>Company</th>
-          <th>Price</th>
-          <th>Change</th>
-          <th>Change %</th>
+          <th>actor_id</th>
+          <th>first_name</th>
+          <th>last_name</th>
         </tr>
       </thead>
     </table>
   </div>
+<!-- Tabla y contenido 🡻 -->
   <div class="tbl-content">
-    <table cellpadding="0" cellspacing="0" border="0">
+    <table cellpadding="0" cellspacing="2" border="0">
       <tbody>
       <?php
         while ($dato = mysqli_fetch_assoc($resultado)) {
@@ -102,13 +81,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
     </table>
   </div>
 </section>
-
-
-
+</div>
 </div>
 
-</div>
-
-
-
-    <?php require_once 'partes/foot.php'; ?>
+<?php require_once 'partes/foot.php'; ?>

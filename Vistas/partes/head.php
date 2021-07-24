@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleMenu.css">
     <link rel="stylesheet" href="css/table.css">
+    
+
 
     <title><?php echo $pagina; ?> </title>
   </head>
   <body>
-    
- 

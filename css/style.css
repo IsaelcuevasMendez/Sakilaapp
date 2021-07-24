@@ -1,5 +1,6 @@
 
-.container{
+
+.container {
     border-radius: 20%;
     width: 100%;
 }
@@ -8,27 +9,30 @@
 
 /* ---------------Search--------------------------------- */
 
-
-.group 			  { 
+.group {
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative; 
-    margin-bottom:45px; 
+    position: relative;
+    margin-bottom: 45px;
     margin-left: 50px;
-  }
-  input 				{
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    display:block;
-    width:50%;
-    border:none;
-    border-bottom:1px solid #757575;
+}
 
-  }
-  input:focus 		{ outline:none; }
-  
-  /* LABEL =======================================
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* LABEL =======================================
   label 				 {
     color:#999; 
     font-size:18px;
@@ -40,58 +44,61 @@
     transition:0.2s ease all; 
     -moz-transition:0.2s ease all; 
     -webkit-transition:0.2s ease all;
-  } */
-  
-  /* active state */
-  input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
-  }
+  } 
 
-  button{
-      border: none;
-      background: #5264AE;
-  }
+
+/* active state */
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+button {
+    border: none;
+    background: #5264AE;
+}
 
 
 /* --------------------------------------------------------------------- */
 
-
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
 body {
-  margin:0;
+    margin: 0;
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
 }
+
 p {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size:14px;
-  color: #333333;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #333333;
 }
 
 .header {
-  position:relative;
-  text-align:center;
-  background: none;
-  color:white;
-  z-index: 3;
-  
+    position: relative;
+    text-align: center;
+    background: none;
+    color: white;
+    z-index: 3;
 }
+
 .logo {
-  width:50px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
+    width: 50px;
+    fill: white;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
 }
+
 
 /* .inner-header {
   height:65vh;
@@ -100,68 +107,271 @@ p {
   padding: 0;
 } */
 
-.flex { /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .waves {
     width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  max-height:100%;
-  z-index: -1;
-  transform: rotate(180deg);
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    max-height: 100%;
+    z-index: -1;
+    transform: rotate(180deg);
 }
 
 .content {
-  position:relative;
-  height:20vh;
-  text-align:center;
-  background-color: white;
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
 }
+
 
 /* Animation */
 
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
 }
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
 }
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
 }
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
 }
+
 @keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
+
+
 /*Shrinking for mobile*/
+
 @media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .content {
-    height:30vh;
-  }
-  h1 {
-    font-size:24px;
-  }
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }
+
+
+/* pie de pagina */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    outline: none;
+}
+
+
+/* ---------------------- SETUP above - aesthetics only */
+
+a {
+    color: white;
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: greenyellow;
+}
+
+h2 {
+    color: greenyellow;
+    font-size: 1.3rem;
+    margin: 5px auto;
+    text-transform: uppercase;
+}
+
+p,
+address {
+    color: white;
+    font-weight: 300;
+}
+
+.footer-wrapper {
+    background-color: rgba(0, 44, 30, .5);
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas: "section-1" "section-2" "section-3" "social" "copyright";
+    -ms-grid-columns: fit-content;
+    grid-template-columns: -webkit-fit-content;
+    grid-template-columns: fit-content;
+    justify-items: stretch;
+    max-height: -webkit-min-content;
+    max-height: -moz-min-content;
+    max-height: min-content;
+    width: inherit;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-wrapper {
+        grid-template-areas: "section-1 section-1" "section-2 section-3" "copyright social";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-wrapper {
+        grid-template-areas: "section-1 section-2 section-3" "copyright social social";
+    }
+}
+
+.footer-wrapper div[class^="section"] {
+    font-size: 1.1rem;
+}
+
+.footer-wrapper>div {
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-wrapper .section-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: section-1;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-wrapper .section-1 {
+        text-align: left;
+    }
+}
+
+.footer-wrapper .section-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: section-2;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-wrapper .section-2 {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-wrapper .section-2 {
+        text-align: center;
+    }
+}
+
+.footer-wrapper .section-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: section-3;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-wrapper .section-3 {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-wrapper .section-3 {
+        text-align: right;
+    }
+}
+
+.footer-wrapper .social {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: social;
+}
+
+.footer-wrapper .copyright {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: copyright;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-wrapper .copyright {
+        text-align: left;
+    }
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+li.link {
+    display: block;
+}
+
+.social-group {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-rows: minmax(30px, 1fr);
+    grid-gap: 1rem;
+    -ms-grid-columns: (minmax(30px, max-content))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(30px, -webkit-max-content));
+    grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .social-group {
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
+        justify-content: right;
+    }
+}
+
+.social-group .social-item {
+    font-size: 0.5rem;
+}
+
+.copyright>sub>span {
+    color: white;
+}
+
+.copyright>sub {
+    color: #98fb00;
+}
+
+
+/*# sourceMappingURL=pieDePagina.css.map */

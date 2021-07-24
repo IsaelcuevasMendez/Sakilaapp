@@ -2,7 +2,7 @@
 
 require_once 'Model/model_lenguaje.php';
 
-$pagina = "Lenguaje";
+$pagina = "Idiomas";
 
 $resultado = obtenerLenguaje($conexion);
 
