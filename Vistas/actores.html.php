@@ -80,8 +80,6 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
           <th>Code</th>
           <th>Company</th>
           <th>Price</th>
-          <th>Change</th>
-          <th>Change %</th>
         </tr>
       </thead>
     </table>
@@ -103,15 +101,6 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
     </table>
   </div>
 </section>
-
-
-
 </div>
-
 </div>
-
-
-
-
-
-    <?php require_once 'partes/foot.php'; ?>
+<?php require_once 'partes/foot.php'; ?>
